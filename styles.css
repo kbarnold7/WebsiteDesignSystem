@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: lato, sans-serif;
+    background-image: url(./Pictures/desktop-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    padding: 0.5rem 0 0 1rem;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+a {
+    color: rgb(24, 24, 220);
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: hsl(293, 100%, 25%);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    display: inline-flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+nav li {
+    margin: auto 3em;
+    padding: 1.75em;
+    background-image: url('./Pictures/Folder-Icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 5em;
+}
+
+
+section {
+    margin: 0.5rem auto;
+    padding-bottom: 0.2em;
+    width: 70%;
+    border: 0.2em outset #848383;
+    box-shadow: -0.4em 0.4em 1em black;
+    background-color: #e7e7e7;
+}
+
+#colors, #fonts, #text-styles {
+    margin-bottom: 2rem;
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.3em;
+    border: 0.1em outset #b5b3b3;
+    background-color: #a8a7a7;
+}
+
+h2 {
+    justify-content: flex-start;
+    font-size: 1.3rem;
+}
+
+h3 {
+    margin: auto;
+    margin-bottom: 0.2em;
+    padding-bottom: 0.2em;
+    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.481);
+    width: 90%;
+    text-align: center;
+}
+
+.close-icon {
+    position: relative;
+    padding: 0.5em;
+    width: 1em;
+    height: 1em;
+    border-top: 0.1em inset white;
+    border-left: 0.1em inset white;
+    border-right: 0.1em solid black;
+    border-bottom: 0.1em solid black;
+    box-shadow: 0.1em 0.1em 0.1em black;
+    background-color: #e7e7e7;
+}
+
+.close-icon-line-1, .close-icon-line-2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0.1em;
+    height: 1em;
+    border: none;
+    background-color: black;
+}
+
+.close-icon-line-1 {
+    transform: rotate(45deg);
+}
+
+.close-icon-line-2 {
+    transform: rotate(-45deg);
+}
+
+.color-grid-wrapper, .fonts-wrapper, .text-styles-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.color-container {
+    padding: 2em;
+    max-width: 100%;
+    min-width: 25%;
+    font-size: 1rem;
+    box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.766);
+}
+
+.color1, .color3, .color4, .color5 {
+    color: white;
+}
+
+.color1 {
+    background-color: #02261c;
+}
+
+.color2 {
+    background-color: #d9b589;
+}
+
+.color3 {
+    background-color: #8c7158;
+}
+
+.color4 {
+    background-color: #a65c32;
+}
+
+.color5 {
+    background-color: #0d0d0d;
+}
+
+.font-container:not(:last-of-type) {
+    padding-bottom: 2em;
+}
+
+.font-container h3 {
+    font-weight: 500;
+}
+
+.font-1 {
+    font-family: Raleway, sans-serif;
+}
+
+.font-2 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+.font-3 {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.thin {
+    font-weight: 200;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.text-style-container ul {
+    padding-top: 0.5em;
+}
+
+.text-style-1 {
+    font-size: 2em;
+    font-weight: 700;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.text-style-2 {
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: Raleway, sans-serif;
+}
+
+.text-style-3 {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Libre Baskerville', serif;
+}
+
+footer {
+    padding: 0.75em;
+    text-align: center;
+    font-size: 1.2rem;
+    background: linear-gradient(#5d4cdc 0%, #3824cb 20%, #3824cb 80%, #5d4cdc 100%);
+}
+
+footer a {
+    color: white;
+}
